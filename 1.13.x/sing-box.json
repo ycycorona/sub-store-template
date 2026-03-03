@@ -337,6 +337,15 @@
       "default": "proxy"
     },
     {
+      "tag": "tailscale_lan",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "tailscale-direct"
+      ],
+      "default": "direct"
+    },
+    {
       "tag": "hk",
       "type": "selector",
       "outbounds": []
@@ -473,6 +482,14 @@
           }
         ],
         "action": "hijack-dns"
+      },
+      {
+        "ip_cidr": [
+          "100.64.0.0/10",
+          "fd7a:115c:a1e0::/48"
+        ],
+        "action": "route",
+        "outbound": "tailscale_lan"
       },
       {
         "ip_is_private": true,
