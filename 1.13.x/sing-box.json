@@ -111,7 +111,7 @@
         "us-auto",
         "all",
         "all-auto",
-        "tailscale-direct",
+        "tailscale-ep",
         "direct"
       ],
       "default": "all-auto"
@@ -134,7 +134,7 @@
         "us-auto",
         "all",
         "all-auto",
-        "tailscale-direct"
+        "tailscale-ep"
       ],
       "default": "proxy"
     },
@@ -156,7 +156,7 @@
         "us-auto",
         "all",
         "all-auto",
-        "tailscale-direct"
+        "tailscale-ep"
       ],
       "default": "direct"
     },
@@ -178,7 +178,7 @@
         "us-auto",
         "all",
         "all-auto",
-        "tailscale-direct"
+        "tailscale-ep"
       ],
       "default": "proxy"
     },
@@ -200,7 +200,7 @@
         "us-auto",
         "all",
         "all-auto",
-        "tailscale-direct"
+        "tailscale-ep"
       ],
       "default": "direct"
     },
@@ -222,7 +222,7 @@
         "us-auto",
         "all",
         "all-auto",
-        "tailscale-direct"
+        "tailscale-ep"
       ],
       "default": "proxy"
     },
@@ -244,7 +244,7 @@
         "us-auto",
         "all",
         "all-auto",
-        "tailscale-direct"
+        "tailscale-ep"
       ],
       "default": "proxy"
     },
@@ -266,7 +266,7 @@
         "us-auto",
         "all",
         "all-auto",
-        "tailscale-direct"
+        "tailscale-ep"
       ],
       "default": "proxy"
     },
@@ -288,7 +288,7 @@
         "us-auto",
         "all",
         "all-auto",
-        "tailscale-direct"
+        "tailscale-ep"
       ],
       "default": "proxy"
     },
@@ -310,7 +310,7 @@
         "us-auto",
         "all",
         "all-auto",
-        "tailscale-direct"
+        "tailscale-ep"
       ],
       "default": "direct"
     },
@@ -332,7 +332,7 @@
         "us-auto",
         "all",
         "all-auto",
-        "tailscale-direct"
+        "tailscale-ep"
       ],
       "default": "proxy"
     },
@@ -341,7 +341,7 @@
       "type": "selector",
       "outbounds": [
         "direct",
-        "tailscale-direct"
+        "tailscale-ep"
       ],
       "default": "direct"
     },
@@ -441,14 +441,9 @@
         "us-auto",
         "all",
         "all-auto",
-        "tailscale-direct"
+        "tailscale-ep"
       ],
       "default": "direct"
-    },
-    {
-      "tag": "tailscale-direct",
-      "type": "direct",
-      "detour": "tailscale-ep"
     },
     {
       "tag": "direct",
