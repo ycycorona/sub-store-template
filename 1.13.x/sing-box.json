@@ -310,6 +310,7 @@
         "us-auto",
         "all",
         "all-auto",
+        "cn-auto",
         "tailscale-ep"
       ],
       "default": "direct"
@@ -420,6 +421,14 @@
       "type": "urltest",
       "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
+      "interval": "1m",
+      "tolerance": 50
+    },
+    {
+      "tag": "cn-auto",
+      "type": "urltest",
+      "outbounds": [],
+      "url": "http://wifi.vivo.com.cn/generate_204",
       "interval": "1m",
       "tolerance": 50
     },
