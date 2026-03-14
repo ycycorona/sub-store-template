@@ -475,7 +475,8 @@
         "eu",
         "eu-auto",
         "all",
-        "all-auto"
+        "all-auto",
+        "cn-auto"
       ],
       "default": "direct"
     },
@@ -602,6 +603,14 @@
       "type": "urltest",
       "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
+      "interval": "5m",
+      "tolerance": 50
+    },
+    {
+      "tag": "cn-auto",
+      "type": "urltest",
+      "outbounds": [],
+      "url": "http://wifi.vivo.com.cn/generate_204",
       "interval": "5m",
       "tolerance": 50
     },
